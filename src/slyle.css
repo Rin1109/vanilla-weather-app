@@ -1,0 +1,28 @@
+.detail-item {
+   display: inline-table;
+}
+
+.weather-app {
+   max-width: 600px;
+   margin: 30px auto;
+   padding: 20px;
+   border: 1px solid #dfdede;
+   border-radius: 10px;
+}
+
+h1 {
+   font-size: 22px;
+   line-height: 26px;
+}
+
+li {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+.weather-detail {
+   padding: 0;
+   margin: 0;
+}
+
