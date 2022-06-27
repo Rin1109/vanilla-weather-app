@@ -10,24 +10,30 @@
 </head>
 <body>
    <div class="container">
-      <div class="weather-app">
-         <div class="row">
-            <div class="col-6">
-               <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Sunny">
-               26 °C | °F
-               <ul class="detail-item">
-                  <li>Precipitation: 44%</li>
-                  <li>Wind: 9km/h</li>
-                  <li>Cloud Cover: 44%</li>
-               </ul>
-
-            </div>
-            <div class="col-6">
-               <h1>London</h1>
-               <ul class="weather-detail">
-                  <li>Sunday 18:57</li>
-                  <li>Sunny</li>
-               </ul>
+      <div class="weather-app-wrapper">
+         <div class="weather-app">
+            <div class="row">
+               <div class="col-8">
+                  <div class="clear-fix">
+                     <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Sunny" class="main-img">
+                     <div class="temperature">
+                        <strong>26</strong>
+                        <span class="units">°C | °F</span> 
+                     </div>
+                     <ul class="detail-item">
+                        <li><strong>Precipitation:</strong> 44%</li>
+                        <li><strong>Wind:</strong> 9km/h</li>
+                        <li><strong>Cloud Cover:</strong> 44%</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-4 weather-main-detail">
+                  <h1>London</h1>
+                  <ul class="weather-detail">
+                     <li>Sunday 18:57</li>
+                     <li>Sunny</li>
+                  </ul>
+               </div>
             </div>
          </div>
          <small id="footer">
