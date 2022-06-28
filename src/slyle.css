@@ -5,10 +5,11 @@ body {
 .detail-item {
    display: inline-block;
    margin-bottom: 20px;
+   padding-left: 1rem;
 }
 
 .detail-item li {
-   font-size: 10px;
+   font-size: 12px;
    
 }
 
@@ -27,7 +28,7 @@ body {
 }
 
 h1 {
-   font-size: 22px;
+   font-size: 24px;
    line-height: 26px;
    font-weight: bold;
 }
@@ -37,12 +38,13 @@ li {
    padding: 0;
    margin: 0;
    color: rgba(83, 83, 83, 0.665);
-   font-size: 14px;
+   font-size: 15px;
+   text-transform: capitalize;
 }
 
 .temperature strong {
    color: #333;
-   font-size: 44px;
+   font-size: 57px;
    font-weight: 400;
    line-height: 2;
    padding-left: 10px;
@@ -64,16 +66,16 @@ li {
 
 .weather-main-detail {
    text-align: right;
-   margin-top: 10px;
+   margin-top: 20px;
    padding-right: 32px;
 }
 
 .units {
    display: inline-block;
    font-size: 14px;
-   line-height: 24px;
+   line-height: 45px;
    margin-top: 16px;
-   padding-left: 6px;
+   padding-left: 0px;
    vertical-align: top;
 }
 
