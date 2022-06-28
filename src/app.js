@@ -9,7 +9,7 @@ function formatDate(timestamp) {
    if (minutes < 10) {
       minutes = `0${minutes}`;
    }
-   
+
    let days = [
       "Sunday",
       "Monday",
@@ -25,8 +25,6 @@ function formatDate(timestamp) {
 }
 
 function displayTemperature(response) {
-   console.log(response.data);
-
    let currentTemp = document.querySelector('#current-temp');
    let currentCity = document.querySelector('#city');
    let currentDescription = document.querySelector('#weather-description');
