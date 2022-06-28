@@ -49,6 +49,7 @@ function displayTemperature(response) {
 }
 
 let apiKey = ("2ef93a39c16392eacc33b8d28a8db82d");
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=${apiKey}&units=metric`;
+let city = "Hurghada";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemperature);
