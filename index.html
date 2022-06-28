@@ -5,6 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
    <link rel="stylesheet" href="src/slyle.css">
    <title>Weather App</title>
 </head>
@@ -17,21 +18,21 @@
                   <div class="clear-fix">
                      <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Sunny" class="main-img">
                      <div class="temperature">
-                        <strong>26</strong>
+                        <strong id="current-temp">26</strong>
                         <span class="units">°C | °F</span> 
                      </div>
                      <ul class="detail-item">
-                        <li><strong>Precipitation:</strong> 44%</li>
-                        <li><strong>Wind:</strong> 9km/h</li>
-                        <li><strong>Cloud Cover:</strong> 44%</li>
+                        <li><strong>Precipitation: </strong><span id="precipitation">  44</span>%</li>
+                        <li><strong>Wind: </strong><span id="wind"> 9</span>km/h</li>
+                        <li><strong>Cloud Cover: </strong><span id="cloud-cover"> 44</span>%</li>
                      </ul>
                   </div>
                </div>
                <div class="col-4 weather-main-detail">
-                  <h1>London</h1>
+                  <h1 id="city">London</h1>
                   <ul class="weather-detail">
                      <li>Sunday 18:57</li>
-                     <li>Sunny</li>
+                     <li id="weather-description">Sunny</li>
                   </ul>
                </div>
             </div>
