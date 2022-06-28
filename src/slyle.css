@@ -10,7 +10,7 @@ body {
 
 .detail-item li {
    font-size: 12px;
-   
+
 }
 
 .weather-app-wrapper{
@@ -38,7 +38,10 @@ li {
    padding: 0;
    margin: 0;
    color: rgba(83, 83, 83, 0.665);
-   font-size: 15px;
+   font-size: 13px;
+}
+
+li:first-letter {
    text-transform: capitalize;
 }
 
@@ -78,4 +81,5 @@ li {
    padding-left: 0px;
    vertical-align: top;
 }
+
 

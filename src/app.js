@@ -1,3 +1,29 @@
+function formatDate(timestamp) {
+   let date = new Date(timestamp);
+   let hours = date.getHours();
+   if (hours < 10) {
+      hours = `0${hours}`;
+   }
+
+   let minutes = date.getMinutes();
+   if (minutes < 10) {
+      minutes = `0${minutes}`;
+   }
+   
+   let days = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+   ];
+   let day = days[date.getDay()];
+   return `${day} ${hours}:${minutes}`;
+
+}
+
 function displayTemperature(response) {
    console.log(response.data);
 
@@ -8,12 +34,17 @@ function displayTemperature(response) {
    let windElement = document.querySelector('#wind');
    let cloudCoverElement = document.querySelector('#cloud-cover');
 
+   let dateElement = document.querySelector('#date');
+
    currentTemp.innerHTML = Math.round(response.data.main.temp);
    currentCity.innerHTML = response.data.name;
    currentDescription.innerHTML = response.data.weather[0].description;
    precipitationElement.innerHTML = Math.round(response.data.main.humidity);
    windElement.innerHTML = Math.round(response.data.wind.speed);
    cloudCoverElement.innerHTML = Math.round(response.data.clouds.all);
+
+   dateElement.innerHTML = formatDate(response.data.dt * 1000);
+
 
 
    
