@@ -34,6 +34,8 @@ function displayTemperature(response) {
 
    let dateElement = document.querySelector('#date');
 
+   let iconElement = document.querySelector('#main-img');
+
    currentTemp.innerHTML = Math.round(response.data.main.temp);
    currentCity.innerHTML = response.data.name;
    currentDescription.innerHTML = response.data.weather[0].description;
@@ -42,6 +44,15 @@ function displayTemperature(response) {
    cloudCoverElement.innerHTML = Math.round(response.data.clouds.all);
 
    dateElement.innerHTML = formatDate(response.data.dt * 1000);
+
+   iconElement.setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+   );
+   iconElement.setAttribute(
+      "alt",
+      response.data.weather[0].description
+   );
 
 
 
