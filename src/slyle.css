@@ -82,4 +82,15 @@ li:first-letter {
    vertical-align: top;
 }
 
+.temperature .active-two {
+   color: #0B5ED7;
+   text-decoration: none;
+}
+
+.temperature .active {
+   color: black;
+   text-decoration: none;
+   cursor: default;
+}
+
 
