@@ -93,4 +93,8 @@ li:first-letter {
    cursor: default;
 }
 
+#footer {
+   font-size: 13px;
+}
+
 
