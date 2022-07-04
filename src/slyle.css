@@ -15,16 +15,21 @@ body {
 
 .weather-app-wrapper{
    max-width: 600px;
-   margin: 30px auto;
+   margin: 40px auto;
 }
 
 .weather-app {
-   max-width: 600px;
+   max-width: 650px;
    margin: 30px auto;
-   margin-bottom: 10px;
+   margin-bottom: 15px;
    padding: 20px;
-   border: 1px solid #dfdede;
    border-radius: 10px;
+   box-shadow: 0 2px 2px 0 rgb(0 0 0 / 16%), 0 0 0 1px rgb(0 0 0 / 8%);
+}
+
+hr {
+   margin-top: 0;
+   color: #767676;
 }
 
 h1 {
