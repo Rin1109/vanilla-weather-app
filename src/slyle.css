@@ -92,7 +92,7 @@ li:first-letter {
    text-decoration: none;
 }
 
-.temperature .active {
+nav-item.temperature .active {
    color: black;
    text-decoration: none;
    cursor: default;
